@@ -1,0 +1,39 @@
+<program> <functions> TK_Comma <functionbody> TK_Comma
+<functions> <function> <functions>
+<functions> eps
+<function> <funsignature> <functionbody>
+<funsignature> <type> TK_ID TK_LFBK <params> TK_RTBK
+<type> TK_INT
+<type> TK_FLOAT
+<type> TK_STRING
+<params> <type> TK_ID TK_Comma <params>
+<params> eps
+<functionbody> TK_LFBR <declarations> <statements> TK_STAR <expr3> TK_Semicolon TK_RTBR
+<declarations> <type> TK_ID TK_Semicolon <declarations>
+<declarations> eps
+<statements> TK_ID TK_ASSIGN <statements'>
+<statements> eps
+<statements'> TK_ID <idstatements>
+<statements'> <expr2> TK_Semicolon
+<idstatements> <funcall> TK_Semicolon <statements>
+<idstatements> <expr1> TK_Semicolon
+<expr1> <T'> <expr'>
+<expr1> eps
+<expr2> <F'> <T'> <expr'>
+<expr'> TK_PLUS <T> <expr'>
+<expr'> eps
+<T> <F> <T'>
+<T'> TK_STAR <F> <T'>
+<T'> eps
+<F> TK_ID
+<F> TK_INTLIT
+<F> TK_REAL_LIT
+<F> TK_STRINGLIT
+<F'> TK_INTLIT
+<F'> TK_REAL_LIT
+<F'> TK_STRINGLIT
+<funcall> TK_LFBK <args> TK_RTBK
+<args> TK_ID TK_Comma <args>
+<args> eps
+<expr3> <expr2>
+<expr3> TK_ID <expr1>

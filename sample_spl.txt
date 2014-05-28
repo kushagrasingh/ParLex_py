@@ -1,0 +1,23 @@
+string fun1(int x, string y,){
+int a;
+string b;
+b = b + y;
+*y;
+}
+float fun2(int I, float j,){
+int k;
+k = I*j+k;
+*k;
+}
+float fun3(){
+float j;
+j= fun2(ghb, jhg,);
+*j;
+}
+,
+{
+float z;
+z = fun3();
+*z;
+}
+,
